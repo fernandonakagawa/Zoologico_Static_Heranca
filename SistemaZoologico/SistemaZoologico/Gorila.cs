@@ -11,5 +11,11 @@ namespace SistemaZoologico
         {
 
         }
+
+        public override string FazerBarulho()
+        {
+            string s = base.FazerBarulho();
+            return s + "URRU URRU!";
+        }
     }
 }

@@ -27,6 +27,12 @@ namespace SistemaZoologico
             Animais.Add(a);
             return true;
         }
+        public bool InserirAnimal(string nome, string especie, float peso, int altura)
+        {
+            Animal a = new Animal(nome, especie, peso, altura);
+            return InserirAnimal(a);
+        }
+
         public bool RemoverAnimal(Animal a)
         {
             return Animais.Remove(a);

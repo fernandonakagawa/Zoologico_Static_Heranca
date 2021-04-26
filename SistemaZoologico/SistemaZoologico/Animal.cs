@@ -29,5 +29,15 @@ namespace SistemaZoologico
 
             QuantidadeAnimaisGlobal++;
         }
+
+        public Animal()
+        {
+
+        }
+
+        public virtual string FazerBarulho()
+        {
+            return $"{this.Nome} faz barulho: ";
+        }
     }
 }
